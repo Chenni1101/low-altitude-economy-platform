@@ -28,4 +28,8 @@ public class DemandService {
         }
         return demandMapper.insert(demand) > 0;
     }
+    // 在 DemandService.java 中添加
+    public Demand getDemandById(Long demandId) {
+        return demandMapper.selectById(demandId);
+    }
 }
